@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebWraper</title>
+    <link href="./total.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d791cc90a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="./—Pngtree—letter w logo png_8526286.png" width="100px">
+        <h1>WebWraper </h1>
+       
+        <div>
+         <a href="https://www.linkedin.com/in/k-lokesh-998096310/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BvHEvI8awTKah3fk0oH0jQA%3D%3D"><img src="./linkedin.png" alt="linkedinlogo" width="25px"></a>
+         <a href="https://www.facebook.com/k.lokesh.1276?mibextid=ZbWKwL"><img src="./facebook.png" alt="facebooklogo" width="25px"></a>
+         </div>
+    </header>
+   <div class="container">
+    <div class="form-box">
+        <h1 id="title">Login </h1>
+        <form id="form">
+            <div class="input-group">
+                <div class="inputfield">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+
+                <div class="inputfield">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="btn-field">
+                <button type="button" onclick="func()" id="login">Login</button>
+            </div>
+        </form>
+    </div>
+   </div>
+   <script>
+    function func(){
+    var email= document.getElementById("email").value;
+    var pass =document.getElementById("password").value;
+    alert("successful!!")
+    window.location.assign("home.html")
+    }
+   </script>
+    <footer>
+        <p>&copy; 2024 WebWraper. All rights reserved.</p>
+    </footer>
+</body>
+</html>

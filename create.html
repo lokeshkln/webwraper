@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="./total.css">
+</head>
+<body>
+    <header>
+        <img src="./—Pngtree—letter w logo png_8526286.png" width="100px">
+        <h1>WebWraper</h1>
+        <nav> 
+           <ul class="items">
+            <li><a href="home.html" style="color: black;">Home</a></li>
+            <li><a href="create.html" style="color: black;">Create</a></li>
+            <li><a href="about.html" style="color: black;">About Us</a></li>
+           </ul>
+        </nav>
+        <div>
+         <a href="https://www.linkedin.com/in/k-lokesh-998096310/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BvHEvI8awTKah3fk0oH0jQA%3D%3D"><img src="./linkedin.png" alt="linkedinlogo" width="25px"></a>
+         <a href="https://www.facebook.com/k.lokesh.1276?mibextid=ZbWKwL"><img src="./facebook.png" alt="facebooklogo" width="25px"></a>
+         </div>
+    </header>
+    <div class="create">
+        <h4>This page only for Admins. Users can't access this page!</h4>
+        <div class="form-box">
+            <h1 id="title">Login </h1>
+            <form id="form">
+                <div class="input-group">
+                    <div class="inputfield">
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+    
+                    <div class="inputfield">
+                        <input type="password" id="pass" placeholder="Password">
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="button" onclick="g()" id="submit">Login</button>
+                </div>
+            </form>
+        </div>
+       </div>
+    <script>
+    function g(){
+    var email= document.getElementById("email").value;
+    var pass =document.getElementById("pass").value;
+    if(email=="ganesh0420@gmail.com" && pass == "709542"){
+    window.location.assign("admin.html")
+    }
+    else{
+    alert("Invalid Id or Password")
+    }
+    }
+
+    </script>
+    <footer>
+        <p>&copy; 2024 WebWraper. All rights reserved.</p>
+    </footer>
+</body>
+</html>

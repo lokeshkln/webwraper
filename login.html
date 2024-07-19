@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>WebWrapper</h1>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="create.html">Create Post</a>
+                <a href="about.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Blog Posts</h2>
+        <div id="postsContainer">
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const postsContainer = document.getElementById('postsContainer');
+
+            
+            const title = localStorage.getItem('blogTitle');
+            const content = localStorage.getItem('blogContent');
+
+            if (title && content) {
+               
+                const postDiv = document.createElement('div');
+                postDiv.className = 'post';
+
+                const postTitle = document.createElement('h3');
+                postTitle.textContent = title;
+                postDiv.appendChild(postTitle);
+
+                const postContent = document.createElement('p');
+                postContent.textContent = content;
+                postDiv.appendChild(postContent);
+
+                
+                postsContainer.appendChild(postDiv);
+
+                localStorage.removeItem('blogTitle');
+                localStorage.removeItem('blogContent');
+            } else {
+                postsContainer.innerHTML = '<p>No posts available.</p>';
+            }
+        });
+    </script>
+</body>
+</html>
